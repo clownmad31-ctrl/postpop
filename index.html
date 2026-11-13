@@ -3,34 +3,135 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PostPop (Mon Planificateur)</title>
-<style>
-body{margin:0;font:17px/1.6 system-ui,sans-serif;background:#fff7ec;color:#3b2a20}
-main{max-width:680px;margin:0 auto;padding:48px 20px}
-h1{font-size:2.2rem;margin:0 0 4px;color:#ff6b4a}
-h2{font-size:1.2rem;margin-top:32px}
-a{color:#c2410c}
-.card{background:#fff;border-radius:18px;padding:20px 24px;box-shadow:0 6px 0 #f3dcc2}
-small{color:#7a6658}
-</style>
+<title>PostPop : une vidéo, trois réseaux, un clic</title>
+<meta name="description" content="PostPop publie tes Shorts et tes Reels sur YouTube, Instagram et Facebook, tout seul, à l'heure que tu choisis. Gratuit, pour Windows.">
+<link rel="icon" href="img/icone.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="top">
+  <a class="brand" href="#"><img src="img/icone.png" alt="" width="36" height="36"><span>Post<b>Pop</b></span></a>
+  <nav>
+    <a href="#fonctions" data-t="nav.features">Fonctions</a>
+    <a href="#prix" data-t="nav.pricing">Prix</a>
+    <a href="#questions" data-t="nav.faq">Questions</a>
+  </nav>
+  <button class="lang" id="lang" type="button" aria-label="Changer de langue / Change language">English</button>
+  <a class="btn primary small cta" href="#inscription" data-t="nav.cta">Je veux ma place</a>
+</header>
+
 <main>
-<h1>PostPop</h1>
-<p><small>Projet Google : « Mon Planificateur »</small></p>
-<div class="card">
-<p>PostPop est un planificateur de publications personnel, installé sur l'ordinateur de son utilisateur. Il sert à préparer des vidéos, leurs titres, légendes et hashtags, puis à les programmer plusieurs semaines à l'avance sur un calendrier.</p>
-<p>Avec l'accord de l'utilisateur, PostPop se connecte à sa chaîne YouTube, à sa Page Facebook et à son compte Instagram professionnel pour y publier les vidéos qu'il a programmées, à la date choisie.</p>
-</div>
-<h2>Ce que PostPop fait avec YouTube</h2>
-<ul>
-<li>Lire le nom et l'identifiant de la chaîne connectée, pour l'afficher dans l'application.</li>
-<li>Envoyer sur cette chaîne les vidéos que l'utilisateur a lui-même programmées.</li>
-</ul>
-<p>PostPop n'a pas de serveur : tout reste sur l'ordinateur de l'utilisateur. Le détail est dans les <a href="confidentialite.html">règles de confidentialité</a>.</p>
-<h2>English summary</h2>
-<p>PostPop is a personal, local desktop scheduler. With the user's consent it uploads the videos they scheduled to their own YouTube channel. It has no server and shares no data. See the <a href="confidentialite.html">privacy policy</a>.</p>
-<p><small>PostPop utilise les services d'API YouTube. Contact : ouvrir un ticket sur la page GitHub de ce projet.</small></p>
+<section class="hero">
+  <div class="hero-text">
+    <p class="tag" data-t="hero.tag">Pour les créateurs de Shorts et de Reels</p>
+    <h1 data-t="hero.title">Une vidéo. Trois réseaux. Un clic.</h1>
+    <p class="lead" data-t="hero.lead">PostPop publie tes vidéos sur YouTube, Instagram et Facebook, tout seul, au jour et à l'heure que tu choisis. Tu prépares ta semaine en dix minutes, puis tu éteins ton PC.</p>
+    <form class="join" data-form novalidate>
+      <label class="sr" for="email-1" data-t="form.label">Ton adresse e-mail</label>
+      <input id="email-1" name="email" type="email" autocomplete="email" required placeholder="ton@email.fr" data-tp="form.placeholder">
+      <input class="hp" name="site" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn primary" type="submit" data-t="form.button">Prévenez-moi au lancement</button>
+      <label class="consent"><input name="consent" type="checkbox" required> <span data-t="form.consent">J'accepte de recevoir un e-mail de PostPop pour le lancement. Rien d'autre, et je peux me retirer quand je veux.</span></label>
+      <p class="form-msg" role="status" aria-live="polite"></p>
+    </form>
+    <p class="hint"><span class="dot"></span> <span data-t="hero.founder">Les 200 premiers inscrits auront accès à l'offre Fondateur : Pro à vie pour 79 €.</span> <b class="left" data-left hidden></b></p>
+  </div>
+  <figure class="hero-shot">
+    <img src="img/tableau-de-bord-fr.png" data-img="tableau-de-bord" alt="Le tableau de bord de PostPop : la semaine de publications, réseau par réseau" width="1750" height="1102">
+  </figure>
+</section>
+
+<section class="trio">
+  <article><span class="ico">🎁</span><h3 data-t="trio.1.t">Gratuit pour de vrai</h3><p data-t="trio.1.p">Trois réseaux, la programmation et les statistiques, sans carte bancaire. Les outils en ligne font souvent payer chaque réseau.</p></article>
+  <article><span class="ico">🔒</span><h3 data-t="trio.2.t">Tes vidéos restent chez toi</h3><p data-t="trio.2.p">PostPop tourne sur ton PC. Il envoie tes vidéos directement à YouTube, Instagram et Facebook, sans passer par nos serveurs : nous n'en avons pas.</p></article>
+  <article><span class="ico">🎬</span><h3 data-t="trio.3.t">Fait par un créateur</h3><p data-t="trio.3.p">Je l'ai construit pour mes propres chaînes, parce que publier la même vidéo à la main sur trois réseaux me prenait mes soirées.</p></article>
+</section>
+
+<section id="fonctions" class="features">
+  <h2 data-t="feat.title">Tout ce qu'il faut pour publier sans y penser</h2>
+  <div class="grid">
+    <article><h3 data-t="feat.1.t">📅 Programme ta semaine d'un coup</h3><p data-t="feat.1.p">Glisse tes vidéos, choisis les jours et les heures. YouTube, Instagram et Facebook publient à l'heure dite, même ordinateur éteint.</p></article>
+    <article><h3 data-t="feat.2.t">📊 Toutes tes statistiques au même endroit</h3><p data-t="feat.2.p">Abonnés, vues, j'aime et commentaires des trois réseaux réunis sur un seul écran, ou réseau par réseau.</p></article>
+    <article><h3 data-t="feat.3.t">🧭 Un conseiller qui lit tes chiffres</h3><p data-t="feat.3.p">Ta meilleure heure, ton meilleur jour, la vidéo qui cartonne et pourquoi. Des phrases simples, avec quoi faire ensuite.</p></article>
+    <article><h3><span data-t="feat.4.t">✨ Titres et légendes écrits par l'IA</span> <em class="pro">Pro</em></h3><p data-t="feat.4.p">L'IA regarde ta vidéo et propose trois textes dans ton style, avec les hashtags et le premier commentaire.</p></article>
+    <article><h3><span data-t="feat.5.t">💬 Réponses automatiques aux commentaires</span> <em class="pro">Pro</em></h3><p data-t="feat.5.p">PostPop répond à tes nouveaux commentaires dans la langue de chacun, et laisse de côté les insultes et les arnaques.</p></article>
+    <article><h3 data-t="feat.6.t">🌍 En dix langues</h3><p data-t="feat.6.p">Français, anglais, espagnol, portugais, russe, chinois, hindi, bengali, arabe et ourdou. Tu changes d'un clic.</p></article>
+  </div>
+  <figure class="wide-shot">
+    <img src="img/statistiques-fr.png" data-img="statistiques" alt="L'écran Statistiques de PostPop : chiffres clés, résultat de chaque vidéo et note sur 100" width="1750" height="1102" loading="lazy">
+    <figcaption data-t="feat.caption">Chiffres d'exemple.</figcaption>
+  </figure>
+</section>
+
+<section id="prix" class="pricing">
+  <h2 data-t="price.title">Des prix simples</h2>
+  <p class="sub" data-t="price.sub">Les outils en ligne coûtent souvent 15 à 25 $ par mois pour trois réseaux. PostPop commence à zéro.</p>
+  <div class="plans">
+    <article class="plan">
+      <h3 data-t="price.free.t">Gratuit</h3>
+      <p class="amount">0 €</p>
+      <ul>
+        <li data-t="price.free.1">YouTube, Instagram et Facebook en automatique</li>
+        <li data-t="price.free.2">TikTok en mode assisté</li>
+        <li data-t="price.free.3">Jusqu'à 20 publications en attente</li>
+        <li data-t="price.free.4">Statistiques et conseiller</li>
+      </ul>
+    </article>
+    <article class="plan best">
+      <p class="ribbon" data-t="price.pro.ribbon">Le plus choisi</p>
+      <h3>Pro</h3>
+      <p class="amount">7,99 € <small data-t="price.pro.per">par mois</small></p>
+      <p class="or" data-t="price.pro.or">ou 59 € par an</p>
+      <ul>
+        <li data-t="price.pro.1">Publications sans limite</li>
+        <li data-t="price.pro.2">Titres, légendes et hashtags par l'IA</li>
+        <li data-t="price.pro.3">Réponses automatiques aux commentaires</li>
+        <li data-t="price.pro.4">Analyse approfondie de tes chiffres</li>
+      </ul>
+    </article>
+    <article class="plan">
+      <h3 data-t="price.founder.t">Fondateur</h3>
+      <p class="amount">79 € <small data-t="price.founder.per">une fois</small></p>
+      <p class="or" data-t="price.founder.or">200 places, au lancement seulement</p>
+      <ul>
+        <li data-t="price.founder.1">Tout Pro, à vie</li>
+        <li data-t="price.founder.2">Aucun abonnement</li>
+        <li data-t="price.founder.3">Réservé aux inscrits de la liste d'attente</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="questions" class="faq">
+  <h2 data-t="faq.title">Questions fréquentes</h2>
+  <details><summary data-t="faq.1.q">Sur quel ordinateur ça marche ?</summary><p data-t="faq.1.a">Windows 10 et Windows 11. Pas encore de version Mac.</p></details>
+  <details><summary data-t="faq.2.q">Est-ce que PostPop voit mon mot de passe ?</summary><p data-t="faq.2.a">Non. Tu te connectes sur les pages officielles de Google et de Meta, et PostPop reçoit seulement l'autorisation de publier. Tu peux la retirer quand tu veux.</p></details>
+  <details><summary data-t="faq.3.q">Mon PC doit-il rester allumé ?</summary><p data-t="faq.3.a">Non pour YouTube et Facebook : ils gardent ta vidéo et la publient à l'heure. Pour Instagram, un petit relais gratuit sur ton propre compte Google s'en charge.</p></details>
+  <details><summary data-t="faq.4.q">Et TikTok ?</summary><p data-t="faq.4.a">TikTok ne laisse pas un petit logiciel publier à ta place. PostPop te prévient à l'heure, copie ta légende et ouvre la bonne page : vingt secondes à la main.</p></details>
+  <details><summary data-t="faq.5.q">Que faites-vous de mon e-mail ?</summary><p data-t="faq.5.a">Il sert à une seule chose : te prévenir du lancement. Il n'est ni vendu ni partagé, et tu peux le faire supprimer à tout moment. Le détail est dans les règles de confidentialité.</p></details>
+</section>
+
+<section id="inscription" class="final">
+  <h2 data-t="final.title">Sois prévenu le jour du lancement</h2>
+  <p data-t="final.sub">Un seul e-mail, le jour où PostPop est prêt à être téléchargé.</p>
+  <form class="join center" data-form novalidate>
+    <label class="sr" for="email-2" data-t="form.label">Ton adresse e-mail</label>
+    <input id="email-2" name="email" type="email" autocomplete="email" required placeholder="ton@email.fr" data-tp="form.placeholder">
+    <input class="hp" name="site" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn primary" type="submit" data-t="form.button">Prévenez-moi au lancement</button>
+    <label class="consent"><input name="consent" type="checkbox" required> <span data-t="form.consent">J'accepte de recevoir un e-mail de PostPop pour le lancement. Rien d'autre, et je peux me retirer quand je veux.</span></label>
+    <p class="form-msg" role="status" aria-live="polite"></p>
+  </form>
+</section>
 </main>
+
+<footer>
+  <p><a href="confidentialite.html" data-t="foot.privacy">Règles de confidentialité</a> · <span data-t="foot.api">PostPop utilise les services d'API YouTube.</span></p>
+  <p class="small" data-t="foot.legal">PostPop est un logiciel indépendant. YouTube, Instagram, Facebook et TikTok sont des marques de leurs propriétaires respectifs.</p>
+  <p class="small" data-legal></p>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

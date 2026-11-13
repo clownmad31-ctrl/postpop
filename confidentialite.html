@@ -4,42 +4,57 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PostPop : règles de confidentialité</title>
+<link rel="icon" href="img/icone.png">
 <style>
-body{margin:0;font:17px/1.6 system-ui,sans-serif;background:#fff7ec;color:#3b2a20}
-main{max-width:680px;margin:0 auto;padding:48px 20px}
-h1{font-size:1.9rem;margin:0 0 4px;color:#ff6b4a}
+body{margin:0;font:17px/1.6 system-ui,sans-serif;background:#f6f5fa;color:#1c1730}
+main{max-width:720px;margin:0 auto;padding:48px 20px}
+h1{font-size:1.9rem;margin:0 0 4px;color:#6a3cf0}
 h2{font-size:1.2rem;margin-top:32px}
-a{color:#c2410c}
-small{color:#7a6658}
+a{color:#5429cf}
+small{color:#6f6885}
+@media (prefers-color-scheme: dark){body{background:#14111c;color:#f4f1fb}h1{color:#a586ff}a{color:#a586ff}small{color:#a59dba}}
 </style>
 </head>
 <body>
 <main>
 <h1>Règles de confidentialité de PostPop</h1>
-<p><small>Projet Google : « Mon Planificateur ». Dernière mise à jour : 10 novembre 2026.</small></p>
-<p>PostPop est une application de bureau personnelle. Elle fonctionne entièrement sur l'ordinateur de son utilisateur et n'a aucun serveur.</p>
-<h2>Données consultées</h2>
-<p>Quand l'utilisateur connecte sa chaîne YouTube, PostPop demande deux autorisations à Google :</p>
+<p><small>Projet Google : « Mon Planificateur ». Dernière mise à jour : 13 novembre 2026.</small></p>
+<p>PostPop est une application de bureau. Elle fonctionne sur l'ordinateur de son utilisateur : ses vidéos, ses textes, ses réglages et ses statistiques y restent. PostPop n'a pas de serveur qui les reçoive.</p>
+
+<h2>Ce que PostPop fait avec tes comptes</h2>
+<p>Quand tu connectes ta chaîne YouTube, ta Page Facebook ou ton compte Instagram professionnel, PostPop utilise l'autorisation que tu lui donnes pour :</p>
 <ul>
-<li>lire les informations de base de la chaîne (nom, identifiant) pour les afficher dans l'application ;</li>
-<li>envoyer des vidéos sur cette chaîne, avec le titre, la description, les mots-clés et la date de publication choisis par l'utilisateur.</li>
+<li>lire le nom et l'identifiant du compte, pour les afficher dans l'application ;</li>
+<li>publier les vidéos que tu as toi-même programmées, avec leur titre, leur légende et, si tu le demandes, un premier commentaire ;</li>
+<li>lire les chiffres de ton propre compte et de tes propres vidéos (abonnés, vues, j'aime, nombre de commentaires) pour l'écran Statistiques ;</li>
+<li>si tu actives les réponses automatiques : lire les commentaires laissés sous tes vidéos et y répondre en ton nom.</li>
 </ul>
-<p>Quand l'utilisateur connecte sa Page Facebook et son compte Instagram professionnel, PostPop utilise un jeton d'accès Meta pour :</p>
+<p>PostPop ne lit pas tes messages privés et ne consulte aucun autre compte que le tien.</p>
+
+<h2>Où sont gardées les données</h2>
+<p>Les autorisations (jetons) Google et Meta sont enregistrées uniquement sur ton ordinateur, chiffrées par Windows. Tes posts, tes vidéos, tes réglages et tes statistiques restent eux aussi sur cet ordinateur.</p>
+
+<h2>Ce qui quitte ton ordinateur</h2>
 <ul>
-<li>lire le nom et l'identifiant de la Page et du compte Instagram relié, pour les afficher dans l'application ;</li>
-<li>publier sur cette Page et sur ce compte les vidéos (Reels) que l'utilisateur a lui-même programmées, avec leur légende.</li>
+<li><b>Vers YouTube, Facebook et Instagram :</b> tes vidéos et leurs textes, à ta demande.</li>
+<li><b>Vers ton propre compte Google, si tu installes le relais Instagram :</b> la vidéo à publier, le temps qu'elle soit publiée. Ce relais t'appartient.</li>
+<li><b>Vers Anthropic, si tu utilises les fonctions d'intelligence artificielle :</b> quelques images de ta vidéo, tes chiffres ou le texte des commentaires, uniquement au moment où tu demandes une proposition, une analyse ou une réponse. Ces fonctions passent par ton propre abonnement Claude.</li>
+<li><b>Vers le service de parrainage et de codes cadeau de PostPop :</b> un code, et un identifiant d'installation anonyme tiré au hasard. Aucun nom, aucune adresse e-mail, aucune donnée de tes comptes.</li>
 </ul>
-<p>PostPop ne lit ni les messages, ni les commentaires, ni les abonnés, ni aucune donnée d'autres personnes.</p>
-<h2>Stockage</h2>
-<p>Les jetons d'accès Google et Meta sont enregistrés uniquement sur l'ordinateur de l'utilisateur, chiffrés par le système d'exploitation. Les posts, vidéos et réglages restent eux aussi sur cet ordinateur.</p>
-<h2>Partage</h2>
-<p>PostPop ne vend, ne transmet et ne partage aucune donnée avec qui que ce soit. Les seules données qui quittent l'ordinateur sont les vidéos et leurs textes, envoyés directement à YouTube, Facebook et Instagram à la demande de l'utilisateur. Il n'y a ni publicité, ni mesure d'audience, ni collecte.</p>
+<p>PostPop ne vend et ne partage aucune donnée. L'application ne contient ni traceur ni mesure d'audience.</p>
+
+<h2>Liste d'attente (page de téléchargement)</h2>
+<p>Si tu t'inscris à la liste d'attente, ton adresse e-mail, la langue de la page et la date d'inscription sont enregistrées dans une feuille de calcul privée de l'éditeur de PostPop. Elles servent à une seule chose : t'écrire pour le lancement. Elles ne sont ni vendues ni partagées, et sont supprimées au plus tard un an après le lancement. Pour faire supprimer ton adresse avant, réponds à l'e-mail reçu ou ouvre un ticket sur la page GitHub du projet.</p>
+<p>Cette page n'utilise aucun cookie. Elle retient seulement la langue choisie, dans ton navigateur.</p>
+
 <h2>Retirer l'accès et supprimer les données</h2>
-<p>Le bouton « Déconnecter » de PostPop efface les jetons de l'ordinateur. L'accès peut aussi être retiré à tout moment depuis <a href="https://myaccount.google.com/permissions">les paramètres de sécurité du compte Google</a>. Pour Facebook et Instagram, l'accès se retire dans les paramètres du portefeuille business Meta (utilisateurs système) ou dans <a href="https://www.facebook.com/settings?tab=business_tools">les intégrations professionnelles du compte Facebook</a>. Désinstaller PostPop et supprimer son dossier de données efface tout le reste : PostPop ne conserve aucune donnée ailleurs, il n'y a donc rien d'autre à faire supprimer.</p>
+<p>Le bouton « Déconnecter » de PostPop efface les autorisations de l'ordinateur. L'accès peut aussi être retiré à tout moment depuis <a href="https://myaccount.google.com/permissions">les paramètres de sécurité du compte Google</a>. Pour Facebook et Instagram, il se retire dans les paramètres du portefeuille business Meta ou dans <a href="https://www.facebook.com/settings?tab=business_tools">les intégrations professionnelles du compte Facebook</a>. Désinstaller PostPop et supprimer son dossier de données efface tout le reste.</p>
+
 <h2>Services d'API YouTube</h2>
-<p>PostPop utilise les services d'API YouTube. En l'utilisant, l'utilisateur accepte les <a href="https://www.youtube.com/t/terms">conditions d'utilisation de YouTube</a>. Les <a href="https://policies.google.com/privacy">règles de confidentialité de Google</a> s'appliquent aux données traitées par YouTube.</p>
+<p>PostPop utilise les services d'API YouTube. En l'utilisant, tu acceptes les <a href="https://www.youtube.com/t/terms">conditions d'utilisation de YouTube</a>. Les <a href="https://policies.google.com/privacy">règles de confidentialité de Google</a> s'appliquent aux données traitées par YouTube.</p>
+
 <h2>English summary</h2>
-<p>PostPop is a personal desktop app with no server. It reads basic channel, Page and Instagram account information and publishes the videos the user scheduled to their own YouTube channel, Facebook Page and Instagram professional account. Google and Meta tokens are stored only on the user's computer, encrypted by the operating system. No data is sold, shared or collected. To delete all data, disconnect the accounts in PostPop and uninstall it: nothing is kept anywhere else. Access can be revoked in PostPop, in the Meta business settings, or in the <a href="https://myaccount.google.com/permissions">Google account security settings</a>. PostPop uses YouTube API Services; the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> apply.</p>
+<p>PostPop is a desktop app that runs on the user's computer and has no server receiving their content. With the user's consent it reads basic account information and the user's own statistics (followers, views, likes, comment counts), publishes the videos they scheduled to their own YouTube channel, Facebook Page and Instagram professional account, and, if they turn on automatic replies, reads and answers comments on their own videos. Google and Meta tokens are stored only on the user's computer, encrypted by the operating system. Optional AI features send a few video frames, figures or comment text to Anthropic through the user's own Claude subscription, only when requested. The referral and gift-code service receives a code and a random anonymous installation identifier, nothing else. Waitlist sign-ups (email address, page language, date) are kept in a private spreadsheet, used only to announce the launch, never sold or shared, and deleted on request or at most one year after launch. No data is sold or shared; there are no trackers and no cookies. Access can be revoked in PostPop, in the Meta business settings, or in the <a href="https://myaccount.google.com/permissions">Google account security settings</a>. PostPop uses YouTube API Services; the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> apply.</p>
 <p><small>Contact : ouvrir un ticket sur la page GitHub de ce projet. <a href="index.html">Retour à l'accueil</a></small></p>
 </main>
 </body>
